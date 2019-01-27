@@ -1,5 +1,8 @@
 /**
- * Stack Data Structure
+ * Stack - Data Structure
+ * Main concept is first in last out
+ * In this example below we have an object 
+ * We push the value into the last key of the object, like this we pop the value from the last key 
  */
 export {}
 
