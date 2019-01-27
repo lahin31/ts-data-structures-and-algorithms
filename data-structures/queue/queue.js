@@ -1,6 +1,8 @@
 /**
  * Queue - Data Structure
  * Main concept is First in First Out
+ * We have a students array where we add student into the front
+ * and delete student from the front
  */
 var Queue = /** @class */ (function () {
     function Queue() {
@@ -9,9 +11,25 @@ var Queue = /** @class */ (function () {
     /**
      * addStudent - add element/'s to the front
      */
-    Queue.prototype.addStudents = function (new_student) {
-        this.students.unshift(new_student);
-        return this.students;
+    Queue.prototype.enqueue = function (new_student) {
+        if (this.students.length === 0) { // checking if the students array is null we directly push the value into the array
+            this.students.unshift(new_student);
+            return this.students;
+        }
+        else {
+            var added = false;
+            for (var i = 0; i < this.students.length; i++) {
+                if (new_student < this.students[i]) {
+                    this.students.splice(i, 0, new_student);
+                    added = true;
+                    break;
+                }
+            }
+            if (!added) {
+                this.students.push(new_student);
+            }
+            return this.students;
+        }
     };
     /**
      * dequeue - delete the first item
@@ -29,6 +47,6 @@ var Queue = /** @class */ (function () {
     return Queue;
 }());
 var queue = new Queue();
-console.log(queue.addStudents("Shaun")); // ['Shaun', 'Mark', 'John', 'Michael']
+console.log(queue.enqueue("Shaun")); // ['Shaun', 'Mark', 'John', 'Michael']
 console.log(queue.dequeue()); // ['Mark', 'John', 'Michael']
 console.log(queue.getLength()); // 3

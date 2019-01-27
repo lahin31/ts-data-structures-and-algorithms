@@ -4,7 +4,7 @@
  * We have a students array where we add student into the front 
  * and delete student from the front
  */
-
+export {} 
 class Queue {
 
     public students: Array<string> = ["Mark", "John", "Michael"];
@@ -12,7 +12,7 @@ class Queue {
     /**
      * addStudent - add element/'s to the front
      */
-    public addStudents(new_student) {
+    public enqueue(new_student) {
         this.students.unshift(new_student);
         return this.students;
     }
@@ -34,6 +34,6 @@ class Queue {
 }
 
 let queue = new Queue();
-console.log(queue.addStudents("Shaun")) // ['Shaun', 'Mark', 'John', 'Michael']
+console.log(queue.enqueue("Shaun")) // ['Shaun', 'Mark', 'John', 'Michael']
 console.log(queue.dequeue()) // ['Mark', 'John', 'Michael']
 console.log(queue.getLength())// 3
