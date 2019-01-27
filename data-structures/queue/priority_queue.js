@@ -8,7 +8,7 @@ var PriorityQueue = /** @class */ (function () {
         ];
     }
     /**
-     * addStudent - add people based on their proprity(here priority is id)
+     * enqueue - add people based on their proprity(here priority is id)
      */
     PriorityQueue.prototype.enqueue = function (new_people) {
         var _this = this;

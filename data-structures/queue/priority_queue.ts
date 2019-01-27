@@ -1,21 +1,20 @@
 /**
- * Queue - Data Structure
- * Main concept is First in First Out
- * We have a students array where we add student into the front 
- * and delete student from the front
+ * Priority Queue - Data Structure
+ * We have a people array where we add more people based on their priority
+ * and delete people from the front
  */
 export {}
 class PriorityQueue {
 
-    people = [
+    private people: Array<any> = [
         { id: 1, name: "Mark" },
         { id: 2, name: "David" }
     ];
 
     /**
-     * addStudent - add people based on their proprity(here priority is id)
+     * enqueue - add people based on their proprity(here priority is id)
      */
-    public enqueue(new_people) {
+    public enqueue(new_people: any) {
         if(this.people.length === 0) {
             this.people.unshift(new_people);
             return this.people;
