@@ -29,4 +29,4 @@ class BubbleSort {
 }
 
 let bubbleSort = new BubbleSort()
-console.log(bubbleSort.makeSort())
+console.log(bubbleSort.makeSort()) // [10, 10, 15, 20, 25, 40, 45]
