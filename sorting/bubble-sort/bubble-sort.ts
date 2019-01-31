@@ -1,11 +1,13 @@
 /**
  * Bubble Sort - Sorting
+ * Given an Array of integers, we will sort them using Bubble sort 
+ * Time complexity - O(n^2)
  */
 export {}
 
 class BubbleSort {
 
-    readonly arr: Array<number> = [10, 25, 20, 40, 45, 15, 10];
+    readonly arr: Array<number> = [10, 25, 20, 40, 45, 15, 10, 5];
 
     /**
      * makeSort - sorting function

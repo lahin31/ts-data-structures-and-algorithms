@@ -2,7 +2,7 @@
 exports.__esModule = true;
 var BubbleSort = /** @class */ (function () {
     function BubbleSort() {
-        this.arr = [10, 25, 20, 40, 45, 15, 10];
+        this.arr = [10, 25, 20, 40, 45, 15, 10, 5];
     }
     /**
      * makeSort - sorting function
@@ -23,4 +23,4 @@ var BubbleSort = /** @class */ (function () {
     return BubbleSort;
 }());
 var bubbleSort = new BubbleSort();
-console.log(bubbleSort.makeSort());
+console.log(bubbleSort.makeSort()); // [10, 10, 15, 20, 25, 40, 45]
