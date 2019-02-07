@@ -1,6 +1,6 @@
 /**
  * Binary Search - Searching Algorithm
- * Given an array of integers, we need to find the index 8
+ * Given an array of integers, we need to find the index of 8
  */
 var BinarySearch = /** @class */ (function () {
     function BinarySearch() {
