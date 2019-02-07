@@ -2,8 +2,7 @@
 Given an array of integers. We need to find the index for a certain value using Linear Search Algorithm.
 
 ## Example
-Given array: **[5, 6, 7, 1, 3, 2]**
-We need to find the index of 3
+Given array: **[5, 6, 7, 1, 3, 2]**, we need to find the index of 3
 
 Steps: 
 Start traversing the array,
