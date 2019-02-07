@@ -1,4 +1,4 @@
-# Linear Search - Algorithm
+# Binary Search - Algorithm
 Given an array of integers. We need to find the index for a certain value using Binary Search Algorithm.
 
 ## Example
