@@ -13,7 +13,7 @@ In every steps we need to update three variable middle, left and right. Initiall
 
 ## Pseudocode
 ```
-start a loop until the condition is true, left <= right 
+start a loop until the left <= right  is true
     mid = (left + right) / 2;
     if the value of arr[mid] is equal to the desired value
         return mid
