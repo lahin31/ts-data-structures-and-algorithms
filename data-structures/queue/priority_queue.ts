@@ -45,6 +45,6 @@ class PriorityQueue {
 }
 
 let priority_queue = new PriorityQueue();
-console.log(priority_queue.enqueue({id: 2, name:"Shaun"}))
-console.log(priority_queue.dequeue())
-console.log(priority_queue.getLength())
+console.log(priority_queue.enqueue({id: 2, name:"Shaun"})) // [ { id: 1, name: 'Mark' },{ id: 2, name: 'Shaun' },{ id: 2, name: 'David' } ]
+console.log(priority_queue.dequeue()) // [ { id: 2, name: 'Shaun' }, { id: 2, name: 'David' } ]
+console.log(priority_queue.getLength()) // 2

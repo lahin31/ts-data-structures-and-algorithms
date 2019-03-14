@@ -31,9 +31,17 @@ class Queue {
     public getLength() {
         return this.students.length;
     }
+
+    /**
+     * getFrontValue - return the front(first) value of the queue
+     */
+    public getFrontValue() {
+        return this.students[0]
+    }
 }
 
 let queue = new Queue();
 console.log(queue.enqueue("Shaun")) // ['Shaun', 'Mark', 'John', 'Michael']
 console.log(queue.dequeue()) // ['Mark', 'John', 'Michael']
 console.log(queue.getLength())// 3
+console.log(queue.getFrontValue()) // "Mark"
